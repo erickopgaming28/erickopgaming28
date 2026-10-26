@@ -5,6 +5,15 @@
   </picture>
 </p>
 
+<details>
+<summary>Encender la magia · ver GIF animado</summary>
+
+<p align="center"><img src="assets/aventura-viva.gif" alt="Escena animada a petición: luciérnagas, estrellas y magia en el mapa de Erick." width="420"></p>
+
+Puedes cerrar esta escena para volver a la lectura. La portada de arriba respeta la preferencia de movimiento del navegador.
+
+</details>
+
 <p align="center"><strong>Soy Erick. Creo herramientas para el día a día.</strong><br>IA local, automatización, música y proyectos que salen de la pantalla.</p>
 
 <p align="center"><sub>Clase: Artífice · Tres caminos: crear, explorar y aprender.</sub></p>

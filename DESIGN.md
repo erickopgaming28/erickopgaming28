@@ -20,6 +20,8 @@ Después pidió más vida, GIF y movimiento. La portada conserva 420 px de ancho
 
 Tres logros de 140 px se calculan con datos públicos. El inventario añade contenido en un desplegable. El campamento final es una franja de 360 px, sin volver a una tarjeta enorme. No hay estadísticas ficticias, contadores de visitas o servicios externos de GIF.
 
+El navegador de revisión declara movimiento reducido. Por eso, además de la selección automática GIF/PNG, hay un control «Encender la magia» que abre el GIF dentro del perfil a petición del visitante, sin modificar ajustes del sistema.
+
 ## Límites
 
 La apariencia general de GitHub no es controlable desde Markdown. Los gráficos tienen alternativas textuales y el diario contiene enlaces de texto nativos. Se muestran solo proyectos públicos. El árbol representa áreas de trabajo reales, no una evaluación profesional.
