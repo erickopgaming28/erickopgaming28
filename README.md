@@ -87,7 +87,7 @@ Cada herramienta aparece en los proyectos de arriba. El inventario describe usos
 <summary><strong>Nivel, experiencia y estadísticas</strong></summary>
 
 <!-- PLAYER:START -->
-**Nivel 05 · 425 XP** · 4 repositorios públicos · 1 estrella recibida. Faltan **75 XP** para el nivel 06.
+**Nivel 04 · 325 XP** · 3 repositorios públicos · 1 estrella recibida. Faltan **75 XP** para el nivel 05.
 <!-- PLAYER:END -->
 
 Cada repositorio público propio aporta **100 XP** y cada estrella recibida aporta **25 XP**. Se excluyen este perfil y los forks. La aventura empieza en el nivel 1 y sube un nivel por cada 100 XP.

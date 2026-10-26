@@ -2,21 +2,19 @@
   "username": "erickopgaming28",
   "repositories": [
     "ai-token-monitor",
-    "autoshorts-legal",
     "clasificador-de-musica",
     "pluma-a1"
   ],
-  "public_repos": 4,
+  "public_repos": 3,
   "stars": 1,
   "languages": [
-    "HTML",
     "JavaScript",
     "Python"
   ],
-  "xp": 425,
-  "level": 5,
+  "xp": 325,
+  "level": 4,
   "level_progress": 25,
-  "next_level_xp": 500,
+  "next_level_xp": 400,
   "updated": "2026-10-25",
   "formula": "100 XP por repositorio público propio (sin este perfil ni forks) + 25 XP por estrella recibida"
 }
