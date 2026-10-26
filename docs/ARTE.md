@@ -6,7 +6,7 @@ El árbol de habilidades, la ficha de jugador, los logros y la hoguera se dibuja
 
 ## GIF del paisaje
 
-`assets/aventura-viva.gif` añade luciérnagas, estrellas y chispas sobre el paisaje original, que permanece intacto en su PNG. La capa de partículas es geometría propia generada por código; FFmpeg compone y codifica la secuencia de vídeo. El GIF mide 840×280, se muestra a un máximo de 420 px y tiene un bucle de unos 6 segundos. `prefers-reduced-motion` selecciona el PNG estático.
+`assets/aventura-viva.gif` añade luciérnagas, estrellas y chispas sobre el paisaje original, que permanece intacto en su PNG. La capa de partículas es geometría propia generada por código; FFmpeg compone y codifica la secuencia de vídeo. El GIF mide 840×280, se muestra a un máximo de 420 px y tiene un bucle de unos 6 segundos. GitHub permite reproducirlo y pausarlo con su control nativo; en la revisión con movimiento reducido empezó pausado.
 
 Para regenerarlo: instala Pillow en el entorno de trabajo y coloca FFmpeg en PATH; después ejecuta `python scripts/animar_portada.py`. Los cuadros intermedios quedan en `local/particulas/`, fuera de Git. La acción de estadísticas no necesita Pillow ni FFmpeg.
 

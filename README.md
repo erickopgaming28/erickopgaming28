@@ -1,18 +1,8 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/aventura.png">
-    <img src="assets/aventura-viva.gif" alt="Erick, Player 28: paisaje RPG animado con luciérnagas, estrellas y chispas mágicas entre la forja, la torre musical y el observatorio." width="420">
-  </picture>
+  <img src="assets/aventura-viva.gif" alt="Aventura de Erick: bosque, estrellas y luciérnagas animadas." width="420">
 </p>
 
-<details>
-<summary>Encender la magia · ver GIF animado</summary>
-
-<p align="center"><img src="assets/aventura-viva.gif" alt="Escena animada a petición: luciérnagas, estrellas y magia en el mapa de Erick." width="420"></p>
-
-Puedes cerrar esta escena para volver a la lectura. La portada de arriba respeta la preferencia de movimiento del navegador.
-
-</details>
+<p align="center"><sub>Si ves ▶ sobre el paisaje, pulsa para darle vida. Puedes pausarlo cuando quieras.</sub></p>
 
 <p align="center"><strong>Soy Erick. Creo herramientas para el día a día.</strong><br>IA local, automatización, música y proyectos que salen de la pantalla.</p>
 

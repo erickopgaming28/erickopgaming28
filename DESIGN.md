@@ -16,11 +16,11 @@ El usuario pidió una vista más cómoda porque las imágenes y la ficha «Artí
 
 ## Movimiento y contenido adicional
 
-Después pidió más vida, GIF y movimiento. La portada conserva 420 px de ancho: un GIF propio de 6 segundos con luciérnagas, estrellas y magia discreta. El archivo pesa aproximadamente 290 KB; no hay desplazamiento de la escena, flashes ni movimiento de texto. `prefers-reduced-motion` selecciona el PNG original. El nivel mantiene sus números estables; un brillo recorre solo la experiencia ganada. Las runas y una hoguera pequeña usan transform y opacity con ciclos de 3–6 segundos y se detienen al pedir movimiento reducido.
+Después pidió más vida, GIF y movimiento. La portada conserva 420 px de ancho: un GIF propio de 6 segundos con luciérnagas, estrellas y magia discreta. El archivo pesa aproximadamente 290 KB; no hay desplazamiento de la escena, flashes ni movimiento de texto. GitHub ofrece su reproductor nativo para reproducir y pausar el GIF. El nivel mantiene sus números estables; un brillo recorre solo la experiencia ganada. Las runas y una hoguera pequeña usan transform y opacity con ciclos de 3–6 segundos y se detienen al pedir movimiento reducido.
 
 Tres logros de 140 px se calculan con datos públicos. El inventario añade contenido en un desplegable. El campamento final es una franja de 360 px, sin volver a una tarjeta enorme. No hay estadísticas ficticias, contadores de visitas o servicios externos de GIF.
 
-El navegador de revisión declara movimiento reducido. Por eso, además de la selección automática GIF/PNG, hay un control «Encender la magia» que abre el GIF dentro del perfil a petición del visitante, sin modificar ajustes del sistema.
+El navegador de revisión declara movimiento reducido. Se verificó que el reproductor de GitHub mantiene el GIF pausado y que el botón ▶ lo reproduce a petición, cambiando su estado a Pause. Se utiliza ese control directamente en la portada, sin duplicar escenas ni modificar ajustes del sistema.
 
 ## Límites
 

@@ -23,6 +23,6 @@ Para regenerar el aspecto sin consultar internet, usa `python scripts/actualizar
 
 Los logros se calculan con el número de repositorios públicos propios, lenguajes principales y estrellas recibidas. El nivel conserva la misma fórmula. La animación del brillo no modifica el porcentaje de XP.
 
-La portada usa un GIF propio y cambia al PNG para `prefers-reduced-motion: reduce`. El desplegable **Encender la magia** permite pedir la reproducción del GIF de forma explícita, incluso con esa preferencia; cerrar el desplegable oculta la escena. Los detalles SVG usan la misma preferencia para desactivar el movimiento. El GIF se regenera por separado con `scripts/animar_portada.py`; consulta [ARTE.md](ARTE.md). No se depende de Tenor, Giphy o generadores de tarjetas externos.
+La portada usa un GIF propio con el reproductor nativo de GitHub: botón ▶ para reproducir y pausa para detener. En el navegador de revisión, con movimiento reducido, GitHub lo mantiene pausado hasta pulsar ▶. El control de reproducción se comprobó mostrando el estado Pause después de activarlo. Los detalles SVG usan `prefers-reduced-motion: reduce` para desactivar el movimiento. El GIF se regenera por separado con `scripts/animar_portada.py`; consulta [ARTE.md](ARTE.md). No se depende de Tenor, Giphy o generadores de tarjetas externos.
 
 GitHub controla las zonas externas al README, como avatar, botones, pestañas y contribuciones. Este proyecto personaliza la biografía, la presentación y el contenido del perfil dentro de esas posibilidades.
