@@ -14,7 +14,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parents[1]
 USER = 'erickopgaming28'
 THEMES = {
- 'dark': dict(bg='#0b1720', panel='#11242a', ink='#e5f7e8', soft='#a6c5bb', line='#36554e', mint='#72edb3', gold='#ffd18a', blue='#a5ceff'),
+ 'dark': dict(bg='#0b1720', panel='#11242a', ink='#e5f7e8', soft='#a6c5bb', line='#36554e', mint='#9ed9bd', gold='#e4c699', blue='#b4c9e3'),
  'light': dict(bg='#f5f8ef', panel='#eaf1e5', ink='#163b32', soft='#3d6156', line='#9aaf9d', mint='#146541', gold='#85510c', blue='#245c91'),
 }
 FONT = base64.b64encode((ROOT/'assets/fonts/PixelifySans.ttf').read_bytes()).decode('ascii')
@@ -49,7 +49,7 @@ class Drawing:
  def __init__(self,w,h,t,title,desc):
   self.w,self.h,self.t=w,h,t
   self.parts=[f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-labelledby="title desc"><title id="title">{escape(title)}</title><desc id="desc">{escape(desc)}</desc>',
-   f'<style>@font-face{{font-family:Pixel;src:url(data:font/ttf;base64,{FONT}) format("truetype");font-weight:100 900}}text{{font-family:Pixel,monospace}}.flow{{stroke-dasharray:5 15;animation:travel 8s linear infinite}}@keyframes travel{{to{{stroke-dashoffset:-80}}}}@media(prefers-reduced-motion:reduce){{.flow{{animation:none}}}}</style>']
+   f'<style>@font-face{{font-family:Pixel;src:url(data:font/ttf;base64,{FONT}) format("truetype");font-weight:100 900}}text{{font-family:Pixel,monospace}}</style>']
   self.rect(0,0,w,h,t['bg'])
  def rect(self,x,y,w,h,color,stroke=None):
   self.parts.append(f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="{color}"'+(f' stroke="{stroke}" stroke-width="2"' if stroke else '')+'/>')
@@ -64,19 +64,13 @@ class Drawing:
   path.write_text(''.join(self.parts)+'</svg>\n',encoding='utf-8')
 
 def player(stats,t):
- d=Drawing(840,292,t,'Ficha de jugador de Erick',f'Nivel {stats["level"]}, {stats["xp"]} XP, {stats["public_repos"]} repositorios públicos y {stats["stars"]} estrellas. Experiencia lúdica basada en datos públicos, no una valoración profesional.')
- d.path('M12 34V12H34 M806 12H828V34 M12 258V280H34 M806 280H828V258',t['line'],3)
- d.diamond(48,50,t['gold'],9)
- d.text(72,60,'ARTÍFICE DIGITAL',30,t['gold'])
- d.text(792,60,f'NV. {stats["level"]:02}',38,t['mint'],'end')
- d.text(38,118,f'{stats["xp"]} XP',48)
- d.text(798,116,f'PRÓXIMO NIVEL: {stats["next_level_xp"]}',26,t['soft'],'end')
+ d=Drawing(640,100,t,'Nivel y experiencia de Erick',f'Nivel {stats["level"]}, {stats["xp"]} XP. Faltan {stats["next_level_xp"]-stats["xp"]} XP para subir. Progreso lúdico basado en datos públicos.')
+ d.diamond(24,26,t['mint'],5)
+ d.text(40,34,f'NIVEL {stats["level"]:02}',25,t['mint'])
+ d.text(620,34,f'{stats["xp"]} XP',25,t['ink'],'end')
  for i in range(40):
-  d.rect(38+i*19.1,140,15.5,24,t['mint'] if i<(40*stats['level_progress']//100) else t['line'])
- d.text(38,218,f'{stats["public_repos"]:02} REPOS PÚBLICOS',27)
- d.text(798,218,f'{stats["stars"]:02} ESTRELLAS',27,t['gold'],'end')
- d.text(38,260,'GUARDADO: '+stats['updated'],23,t['soft'])
- d.text(798,260,f'{stats["next_level_xp"]-stats["xp"]} XP PARA SUBIR',23,t['soft'],'end')
+  d.rect(20+i*15.1,49,12,10,t['mint'] if i<(40*stats['level_progress']//100) else t['line'])
+ d.text(320,86,f'{stats["next_level_xp"]-stats["xp"]} XP PARA NIVEL {stats["level"]+1:02}',22,t['soft'],'middle')
  return d
 
 BRANCHES=[
@@ -86,38 +80,31 @@ BRANCHES=[
 ]
 
 def tree(t,mobile=False):
- w,h=(420,835) if mobile else (840,440)
+ w,h=(420,505) if mobile else (720,270)
  d=Drawing(w,h,t,'Árbol de habilidades: Arcanista, Bardo y Artífice','Tres caminos basados en tecnologías de proyectos públicos: IA y datos con Python, SQLite y PySide6; música y web con JavaScript, Node.js y Spotify API; código al papel con Python, SVG y Bambu Lab A1.')
  if mobile:
-  d.diamond(37,53,t['mint'],12)
-  d.text(65,62,'CREAR ALGO ÚTIL',29)
-  d.path('M37 78V757',t['line'],3)
-  d.path('M37 78V757',t['mint'],3,'flow')
+  d.diamond(30,32,t['mint'],6)
+  d.text(56,40,'CREAR ALGO ÚTIL',25)
+  d.path('M30 44V427',t['line'],2)
   for i,(name,role,tech,more,project,c) in enumerate(BRANCHES):
-   y=123+i*225
-   d.diamond(37,y+30,t[c],9)
-   d.path(f'M49 {y+30}H71',t[c],2)
-   d.rect(72,y,324,188,t['panel'],t['line'])
-   d.text(92,y+39,name,35,t[c])
-   d.text(92,y+70,role,21,t['soft'])
-   d.text(92,y+109,tech,28)
-   d.text(92,y+141,more,23,t['soft'])
-   d.text(92,y+171,project,23,t[c])
+   y=80+i*141
+   d.diamond(30,y+14,t[c],5)
+   d.path(f'M36 {y+14}H56',t['line'],2)
+   d.text(70,y+24,name,27,t[c])
+   d.text(70,y+53,role,20,t['soft'])
+   d.text(70,y+85,tech,23)
+   d.text(70,y+113,more,21,t['soft'])
  else:
-  d.diamond(420,38,t['mint'],12)
-  d.text(420,91,'CREAR ALGO ÚTIL',35,anchor='middle')
-  d.path('M420 111V140 M145 140H695 M145 140V176 M420 140V176 M695 140V176',t['line'],3)
-  d.path('M145 140H695',t['mint'],3,'flow')
+  d.diamond(360,26,t['mint'],6)
+  d.text(360,61,'CREAR ALGO ÚTIL',25,anchor='middle')
+  d.path('M360 76V94 M120 94H600 M120 94V118 M360 94V118 M600 94V118',t['line'],2)
   for i,(name,role,tech,more,project,c) in enumerate(BRANCHES):
-   x=24+i*275
-   d.diamond(x+121,173,t[c],8)
-   d.rect(x,196,242,216,t['panel'],t['line'])
-   d.text(x+20,238,name,35,t[c])
-   d.text(x+20,270,role,20,t['soft'])
-   d.text(x+20,313,tech,28)
-   d.text(x+20,345,more,21,t['soft'])
-   # El proyecto se enlaza desde el diario de misiones del README.
-   d.text(x+20,386,['DATOS → DECISIONES','SONIDO → PLAYLISTS','IDEAS → TRAZOS'][i],21,t[c])
+   x=120+i*240
+   d.diamond(x,119,t[c],5)
+   d.text(x,158,name,28,t[c],'middle')
+   d.text(x,186,role,18,t['soft'],'middle')
+   d.text(x,221,tech,23,anchor='middle')
+   d.text(x,249,more,19,t['soft'],'middle')
  return d
 
 def update_readme(stats):

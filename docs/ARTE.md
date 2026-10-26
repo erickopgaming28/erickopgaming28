@@ -2,7 +2,7 @@
 
 La portada `assets/aventura.png` se creó con la herramienta integrada ImageGen para este perfil. Es una escena original de fantasía pixelada con un viajero y tres destinos: taller, torre musical y observatorio. No usa personajes de una franquicia ni fotos personales.
 
-El árbol de habilidades y la ficha de jugador se dibujan como SVG a partir de datos y geometría; no dependen de generadores externos de tarjetas. La animación es lenta, sin destellos, y respeta `prefers-reduced-motion`.
+El árbol de habilidades y la ficha de jugador se dibujan como SVG a partir de datos y geometría; no dependen de generadores externos de tarjetas. Ambos son estáticos y de tamaño contenido. El árbol se muestra en un desplegable para mantener la presentación principal despejada.
 
 ## Prompt final de la portada
 

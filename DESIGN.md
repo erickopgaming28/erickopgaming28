@@ -8,11 +8,11 @@ Elección explícita del usuario: RPG de fantasía y árbol de habilidades. El v
 
 Mapa nocturno de fantasía pixelada, con un viajero, una forja, una torre musical y un observatorio. El eje es la creación de herramientas. Arte original ImageGen, tipografía Pixelify Sans con SIL OFL, interfaz de pergamino claro y piedra verde nocturna para ambos temas del visitante. Jade para progreso, ámbar para oficio y azul para datos.
 
-El árbol es un diagrama de tres ramas, con conectores ortogonales y diamantes. Escritorio: ramas en paralelo. Móvil: recorrido vertical con rótulos legibles. El pulso de los conectores es el único movimiento, lento, sin destellos, con movimiento reducido.
+El árbol es un diagrama de tres ramas, con conectores ortogonales y diamantes. Escritorio: ramas en paralelo. Móvil: recorrido vertical con rótulos legibles. Es estático, sin grandes marcos, y se abre bajo demanda.
 
 ## Primera vista
 
-Portada panorámica, título humano breve, explicación del trabajo y accesos al árbol y las misiones. A continuación, ficha con XP y nivel calculados mediante fórmula pública. Evitar tarjetas de estadísticas de proveedores externos, porcentajes de habilidades y listas de badges sin contexto.
+El usuario pidió una vista más cómoda porque las imágenes y la ficha «Artífice digital» resultaban demasiado grandes. Portada centrada de hasta 420 px, presentación breve sin título gigante y ficha de hasta 480×75 px (SVG base 640×100). Los proyectos aparecen enseguida como tres párrafos con enlaces nativos. El árbol y las reglas de XP quedan en desplegables cerrados. Evitar repetir números, grandes titulares y adornos que compitan con los proyectos.
 
 ## Límites
 

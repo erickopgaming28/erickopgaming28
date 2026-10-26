@@ -21,4 +21,4 @@ Conservar privados los repositorios privados existentes. Usar únicamente datos 
 La cuenta pública es erickopgaming28. No existe repositorio de perfil y los campos name y bio están vacíos al iniciar. Proyectos públicos verificados: pluma-a1, clasificador-de-musica y ai-token-monitor; autoshorts-legal contiene documentos legales.
 
 ## Confirmed Visual Brief
-El usuario eligió explícitamente «RPG de fantasía y árbol de habilidades». El perfil es una ficha de artífice aventurero, con niveles, XP y tres ramas de proyectos. El estilo RPG manda sobre las alternativas del selector. No se cambia la foto del usuario.
+El usuario eligió explícitamente «RPG de fantasía y árbol de habilidades». Después pidió reducir las imágenes y la ficha de Artífice digital porque resultaban demasiado grandes, y mejorar todo para una lectura más cómoda. Se conserva la identidad RPG con nivel y ramas, con una presentación compacta que prioriza los proyectos. No se cambia la foto del usuario.
