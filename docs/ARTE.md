@@ -2,7 +2,13 @@
 
 La portada `assets/aventura.png` se creó con la herramienta integrada ImageGen para este perfil. Es una escena original de fantasía pixelada con un viajero y tres destinos: taller, torre musical y observatorio. No usa personajes de una franquicia ni fotos personales.
 
-El árbol de habilidades y la ficha de jugador se dibujan como SVG a partir de datos y geometría; no dependen de generadores externos de tarjetas. Ambos son estáticos y de tamaño contenido. El árbol se muestra en un desplegable para mantener la presentación principal despejada.
+El árbol de habilidades, la ficha de jugador, los logros y la hoguera se dibujan como SVG a partir de datos y geometría; no dependen de generadores externos de tarjetas. Las runas y los brillos son suaves; los números y las etiquetas permanecen fijos. El árbol se muestra en un desplegable para mantener la presentación principal despejada.
+
+## GIF del paisaje
+
+`assets/aventura-viva.gif` añade luciérnagas, estrellas y chispas sobre el paisaje original, que permanece intacto en su PNG. La capa de partículas es geometría propia generada por código; FFmpeg compone y codifica la secuencia de vídeo. El GIF mide 840×280, se muestra a un máximo de 420 px y tiene un bucle de unos 6 segundos. `prefers-reduced-motion` selecciona el PNG estático.
+
+Para regenerarlo: instala Pillow en el entorno de trabajo y coloca FFmpeg en PATH; después ejecuta `python scripts/animar_portada.py`. Los cuadros intermedios quedan en `local/particulas/`, fuera de Git. La acción de estadísticas no necesita Pillow ni FFmpeg.
 
 ## Prompt final de la portada
 

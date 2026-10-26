@@ -19,6 +19,10 @@ El generador consulta exclusivamente el listado público de repositorios y desca
 
 Para actualizar, ejecuta **Actions → Actualizar ficha RPG → Run workflow**. También puedes ejecutar `python scripts/actualizar_perfil.py` con Python 3.11 o superior y acceso a internet. En Windows, si no está disponible la base de zonas horarias, instala `tzdata` o usa el entorno Python del estudio que ya la contiene. La acción no tiene programación periódica.
 
-Para regenerar el aspecto sin consultar internet, usa `python scripts/actualizar_perfil.py --desde assets/progreso.json`. Los SVG incluyen las fuentes, dos temas y una versión vertical del árbol para pantallas pequeñas. El árbol es estático y está dentro de un desplegable. La portada mide hasta 420 px de ancho y la ficha hasta 480×75 px, para priorizar la lectura de los proyectos.
+Para regenerar el aspecto sin consultar internet, usa `python scripts/actualizar_perfil.py --desde assets/progreso.json`. Los SVG incluyen las fuentes, dos temas y una versión vertical del árbol para pantallas pequeñas. El árbol está dentro de un desplegable. La portada mide hasta 420 px de ancho y la ficha hasta 480×75 px, para priorizar la lectura de los proyectos.
+
+Los logros se calculan con el número de repositorios públicos propios, lenguajes principales y estrellas recibidas. El nivel conserva la misma fórmula. La animación del brillo no modifica el porcentaje de XP.
+
+La portada usa un GIF propio y cambia al PNG para `prefers-reduced-motion: reduce`. Los detalles SVG usan la misma preferencia para desactivar el movimiento. El GIF se regenera por separado con `scripts/animar_portada.py`; consulta [ARTE.md](ARTE.md). No se depende de Tenor, Giphy o generadores de tarjetas externos.
 
 GitHub controla las zonas externas al README, como avatar, botones, pestañas y contribuciones. Este proyecto personaliza la biografía, la presentación y el contenido del perfil dentro de esas posibilidades.

@@ -22,3 +22,5 @@ La cuenta pública es erickopgaming28. No existe repositorio de perfil y los cam
 
 ## Confirmed Visual Brief
 El usuario eligió explícitamente «RPG de fantasía y árbol de habilidades». Después pidió reducir las imágenes y la ficha de Artífice digital porque resultaban demasiado grandes, y mejorar todo para una lectura más cómoda. Se conserva la identidad RPG con nivel y ramas, con una presentación compacta que prioriza los proyectos. No se cambia la foto del usuario.
+
+La siguiente petición pide más vida, movimiento, GIF y contenido. Se añaden dentro de la escala compacta ya acordada: paisaje animado, detalles de magia, logros verificables e inventario de herramientas. La preferencia de movimiento reducido conserva una versión estática.

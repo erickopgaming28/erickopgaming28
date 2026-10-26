@@ -1,8 +1,13 @@
 <p align="center">
-  <img src="assets/aventura.png" alt="Erick, Player 28: una aventura pixelada entre talleres, música y tecnología." width="420">
+  <picture>
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/aventura.png">
+    <img src="assets/aventura-viva.gif" alt="Erick, Player 28: paisaje RPG animado con luciérnagas, estrellas y chispas mágicas entre la forja, la torre musical y el observatorio." width="420">
+  </picture>
 </p>
 
 <p align="center"><strong>Soy Erick. Creo herramientas para el día a día.</strong><br>IA local, automatización, música y proyectos que salen de la pantalla.</p>
+
+<p align="center"><sub>Clase: Artífice · Tres caminos: crear, explorar y aprender.</sub></p>
 
 <p align="center">
   <picture>
@@ -25,6 +30,25 @@ Organiza música de Spotify por género, ánimo y ocasión, y crea playlists. IA
 Consulta el consumo de tokens por proyecto, con historial local y estimaciones de costo.<br>
 `Python` · `PySide6` · `SQLite`
 
+## Logros
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logro-explorador-dark.svg">
+    <img src="assets/logro-explorador-light.svg" alt="Explorador: repositorios públicos propios publicados." width="140">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logro-multiclase-dark.svg">
+    <img src="assets/logro-multiclase-light.svg" alt="Multiclase: varios lenguajes presentes en mis repositorios públicos." width="140">
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logro-estrella-dark.svg">
+    <img src="assets/logro-estrella-light.svg" alt="Estrella: estrellas recibidas en mis repositorios públicos." width="140">
+  </picture>
+</p>
+
+Los logros y la experiencia se calculan con [datos públicos del perfil](assets/progreso.json).
+
 <details>
 <summary><strong>Abrir árbol de habilidades</strong></summary>
 
@@ -40,6 +64,22 @@ Tres caminos para construir cosas útiles: **Arcanista**, **Bardo** y **Artífic
 </p>
 
 Las ramas muestran áreas de mis proyectos; no representan porcentajes de dominio.
+
+</details>
+
+<details>
+<summary><strong>Inventario de herramientas</strong></summary>
+
+| En la mochila | Para qué lo uso |
+|---|---|
+| Python | Automatización, datos y herramientas locales. |
+| JavaScript y Node.js | Integraciones y aplicaciones como el clasificador de música. |
+| SQLite | Guardar el historial y consultar datos en el equipo. |
+| PySide6 | Interfaces de escritorio. |
+| SVG | Diseños y trazos que pueden salir al papel. |
+| Spotify API | Organizar música y construir playlists. |
+
+Cada herramienta aparece en los proyectos de arriba. El inventario describe usos; no son puntuaciones de habilidad.
 
 </details>
 
@@ -60,6 +100,13 @@ Es un sistema lúdico basado solo en datos públicos. Se recalcula al ejecutar *
 
 ---
 
-Construir, probar y afinar. Herramientas prácticas, interfaces claras y control sobre mis datos.
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/campamento-dark.svg">
+    <img src="assets/campamento-light.svg" alt="Campamento de ideas: una pequeña hoguera animada. Aprender, construir y mejorar." width="360">
+  </picture>
+</p>
 
-[Explorar todos los repositorios →](https://github.com/erickopgaming28?tab=repositories)
+**Mi forma de jugar:** empezar con un problema real, construir algo que pueda usar y mejorarlo con las pruebas. Interfaces claras y control sobre mis datos.
+
+[Explorar todos los repositorios →](https://github.com/erickopgaming28?tab=repositories) · [Proponer una misión](https://github.com/erickopgaming28/erickopgaming28/issues/new?title=Nueva%20misi%C3%B3n)
